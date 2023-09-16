@@ -1,11 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Body from "./components/Body"
+import Login from "./components/Login"
+import Browse from "./components/Browse";
+
 
 function App() {
+
+  const appRouter = createBrowserRouter([
+    {
+      path: "/",
+      element: <Login/>
+    },
+    {
+      path: "/browse",
+      element: <Browse/>  
+    }
+  ])
   return (
-    <div className="App">
-     <p className='font-bold text-3xl text-red-700'>Hellow GPT</p>
-    </div>
+    <RouterProvider router={appRouter}/>
   );
 }
 
