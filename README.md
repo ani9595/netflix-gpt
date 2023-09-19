@@ -3,6 +3,13 @@
 - Header
 - Login
 - Signup
+- Form validation
+- useRefs hooks
+- Firebase setup
+- Deploy app to firebase
+- Authentication - create signup user account
+- Implement signin user API
+- created userStore with redux
 
 # Features
 - Login/Sign
